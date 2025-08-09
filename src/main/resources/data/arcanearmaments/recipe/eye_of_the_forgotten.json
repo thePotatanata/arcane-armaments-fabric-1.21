@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "arcanearmaments:free_soul"
+    },
+    "X": {
+      "item": "minecraft:ender_eye"
+    },
+    "O": {
+      "item": "arcanearmaments:soul_shard"
+    }
+  },
+  "pattern": [
+    "O#O",
+    "#X#",
+    "O#O"
+  ],
+  "result": {
+    "count": 1,
+    "id": "arcanearmaments:eye_of_the_forgotten"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "item.arcanearmaments.soul_shard": "Soul Shard",
+  "item.arcanearmaments.free_soul": "Free Soul",
+  "item.arcanearmaments.eye_of_the_forgotten": "Eye of The Forgotten",
+  "item.arcanearmaments.dread_steel": "Dreadsteel Ingot",
+  "item.arcanearmaments.wither_bone": "Wither Bone",
+
+  "item.arcanearmaments.soul_scythe": "The Reaper's Scythe",
+  "item.arcanearmaments.soul_staff": "Staff of The Forgotten",
+  "item.arcanearmaments.dreaded_blade": "Dreaded Blade",
+
+  "itemgroup.arcanearmaments.arcane_armaments": "Arcane Armaments",
+  "itemgroup.arcanearmaments.arcane_armaments_weapon": "Arcane Armaments Gear",
+
+  "tooltip.arcamearmaments.free_soul.shift_down.1": "§3“A fragment of spirit unbound, released from mortal coil by the sweep of the reaper's blade.",
+  "tooltip.arcamearmaments.free_soul.shift_down.2": "§3It pulses with quiet energy, seeking purpose once more.”",
+  "tooltip.arcamearmaments.free_soul": "§e[Shift] For Information",
+
+  "tooltip.arcamearmaments.soul_scythe.shift_down": "§3“Forged from the breath of a dying wraith, it sings to the void between life and death.”",
+  "tooltip.arcamearmaments.soul_scythe": "§e[Shift] For Information"
+}

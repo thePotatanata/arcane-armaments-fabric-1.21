@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "arcanearmaments:free_soul"
+    },
+    "X": {
+      "item": "arcanearmaments:soul_shard"
+    },
+  "O": {
+    "item": "arcanearmaments:wither_bone"
+  }
+  },
+  "pattern": [
+    "XXO",
+    " O#",
+    "O  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "arcanearmaments:soul_scythe"
+  }
+}

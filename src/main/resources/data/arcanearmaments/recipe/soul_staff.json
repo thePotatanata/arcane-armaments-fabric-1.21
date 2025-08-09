@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "arcanearmaments:free_soul"
+    },
+    "X": {
+      "item": "arcanearmaments:eye_of_the_forgotten"
+    },
+  "O": {
+    "item": "arcanearmaments:wither_bone"
+  }
+  },
+  "pattern": [
+    " X ",
+    " # ",
+    " O "
+  ],
+  "result": {
+    "count": 1,
+    "id": "arcanearmaments:soul_staff"
+  }
+}
