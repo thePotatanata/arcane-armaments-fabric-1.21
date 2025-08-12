@@ -1,6 +1,5 @@
 package net.potatanata.arcanearmaments.mixin;
 
-import net.potatanata.arcanearmaments.ArcaneArmaments;
 import net.minecraft.client.render.model.ModelLoader;
 import net.minecraft.client.util.ModelIdentifier;
 import net.minecraft.util.Identifier;
@@ -21,5 +20,6 @@ public abstract class ModelLoaderMixin {
     private void onInit(CallbackInfo ci) {
         this.loadItemModel(ModelIdentifier.ofInventoryVariant(Identifier.of(MOD_ID, "soul_scythe_3d")));
         this.loadItemModel(ModelIdentifier.ofInventoryVariant(Identifier.of(MOD_ID, "soul_staff_3d")));
+        this.loadItemModel(ModelIdentifier.ofInventoryVariant(Identifier.of(MOD_ID, "dreaded_cleaver_3d")));
     }
 }

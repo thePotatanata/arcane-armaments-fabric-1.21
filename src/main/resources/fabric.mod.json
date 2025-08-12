@@ -5,11 +5,12 @@
 	"name": "Arcane Armaments",
 	"description": "Wield forgotten power from the realms beyond",
 	"authors": [
-		"The Potatanata!"
+		"The Potatanata! & Dragon_Lord8756"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://modrinth.com/mod/arcane-armaments",
+		"discord": "https://discord.gg/4hKenVTNBs",
+		"sources": "https://github.com/thePotatanata/arcane-armaments-fabric-1.21"
 	},
 	"license": "MIT",
 	"icon": "assets/arcanearmaments/icon.png",

@@ -39,6 +39,9 @@ public abstract class ItemRendererMixin {
         if (stack.getItem() == ModItems.SOUL_STAFF && (renderMode == ModelTransformationMode.GUI || renderMode == ModelTransformationMode.GROUND || renderMode == ModelTransformationMode.FIXED)) {
             return getModels().getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(MOD_ID, "soul_staff")));
         }
+        if (stack.getItem() == ModItems.DREADED_CLEAVER && (renderMode == ModelTransformationMode.GUI || renderMode == ModelTransformationMode.GROUND || renderMode == ModelTransformationMode.FIXED)) {
+            return getModels().getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(MOD_ID, "dreaded_cleaver")));
+        }
 
         return bakedModel;
     }
@@ -54,6 +57,9 @@ public abstract class ItemRendererMixin {
         }
         if (stack.getItem() == ModItems.SOUL_STAFF) {
             return this.models.getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(MOD_ID, "soul_staff_3d")));
+        }
+        if (stack.getItem() == ModItems.DREADED_CLEAVER) {
+            return this.models.getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(MOD_ID, "dreaded_cleaver_3d")));
         }
 
 

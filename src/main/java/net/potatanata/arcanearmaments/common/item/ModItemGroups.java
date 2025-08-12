@@ -32,7 +32,7 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.SOUL_SCYTHE);
                         entries.add(ModItems.SOUL_STAFF);
-                        entries.add(ModItems.DREADED_BLADE);
+                        entries.add(ModItems.DREADED_CLEAVER);
 
                     }).build());
 

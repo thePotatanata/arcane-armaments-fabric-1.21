@@ -2,6 +2,7 @@ package net.potatanata.arcanearmaments;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.potatanata.arcanearmaments.common.entity.ModEntities;
 import net.potatanata.arcanearmaments.common.item.ModItems;
 import net.potatanata.arcanearmaments.common.item.ModItemGroups;
 import net.potatanata.arcanearmaments.common.util.ModLootTableModifiers;
@@ -17,6 +18,8 @@ public class ArcaneArmaments implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 
 		ModItems.registerModItems();
+
+		ModEntities.registerModEntities();
 
 		ModLootTableModifiers.modifyLootTables();
 	}

@@ -1,8 +1,6 @@
 package net.potatanata.arcanearmaments.common.item.custom.weapons;
 
 import net.minecraft.client.gui.screen.Screen;
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.passive.CowEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
@@ -12,6 +10,8 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
+import net.potatanata.arcanearmaments.common.entity.ModEntities;
+import net.potatanata.arcanearmaments.common.entity.ScytheSweepEntity;
 
 import java.util.List;
 
@@ -27,10 +27,9 @@ public class SoulScytheItem extends SwordItem {
 
             player.spawnSweepAttackParticles();
 
-            CowEntity sweep = new CowEntity(EntityType.COW, world);
+            ScytheSweepEntity sweep = new ScytheSweepEntity(ModEntities.SCYTHE_SWEEP, world);
 
-            sweep.setPos(user.getEyePos().x, user.getEyePos().y, user.getEyePos().z);
-            sweep.setForwardSpeed(100f);
+            sweep.refreshPositionAndAngles(user.getEyePos().x, user.getEyePos().y, user.getEyePos().z, user.getYaw(), user.getPitch());
 
             world.spawnEntity(sweep);
         }
