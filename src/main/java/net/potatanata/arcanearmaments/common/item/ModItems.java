@@ -7,6 +7,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.potatanata.arcanearmaments.ArcaneArmaments;
 import net.potatanata.arcanearmaments.common.item.custom.FreeSoulItem;
+import net.potatanata.arcanearmaments.common.item.custom.weapons.DreadedCleaverItem;
 import net.potatanata.arcanearmaments.common.item.custom.weapons.SoulScytheItem;
 import net.potatanata.arcanearmaments.common.item.custom.weapons.SoulStaffItem;
 
@@ -30,7 +31,7 @@ public class ModItems {
                     .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.NETHERITE, 5, -2.6f))));
 
     public static final Item DREADED_CLEAVER = registerItem("dreaded_cleaver",
-            new SwordItem(ToolMaterials.NETHERITE, new Item.Settings()
+            new DreadedCleaverItem(ToolMaterials.NETHERITE, new Item.Settings()
                     .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.NETHERITE, 7, -3f))));
 
     private static Item registerItem(String name, Item item) {
