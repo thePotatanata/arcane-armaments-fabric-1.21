@@ -10,7 +10,6 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
-import net.potatanata.arcanearmaments.common.entity.ModEntities;
 import net.potatanata.arcanearmaments.common.entity.ScytheSweepEntity;
 
 import java.util.List;
@@ -20,21 +19,17 @@ public class SoulScytheItem extends SwordItem {
         super(toolMaterial, settings);
     }
 
-    @Override
-    public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-
-        if (!world.isClient() && user instanceof PlayerEntity player) {
-
-            player.spawnSweepAttackParticles();
-
-            ScytheSweepEntity sweep = new ScytheSweepEntity(ModEntities.SCYTHE_SWEEP, world);
-
-            sweep.refreshPositionAndAngles(user.getEyePos().x, user.getEyePos().y, user.getEyePos().z, user.getYaw(), user.getPitch());
-
-            world.spawnEntity(sweep);
-        }
-        return super.use(world, user, hand);
-    }
+   @Override
+   public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
+       if (!world.isClient) {
+           if (!user.getItemCooldownManager().isCoolingDown(this)) {
+               ScytheSweepEntity sweep = new ScytheSweepEntity(world, user);
+               world.spawnEntity(sweep);
+           }
+       }
+       user.getItemCooldownManager().set(this, 20);
+       return super.use(world, user, hand);
+   }
 
     @Override
     public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {

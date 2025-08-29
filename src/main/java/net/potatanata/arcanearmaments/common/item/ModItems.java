@@ -18,9 +18,11 @@ public class ModItems {
     public static final Item SOUL_SHARD = registerItem("soul_shard", new Item(new Item.Settings().rarity(Rarity.RARE)));
     public static final Item FREE_SOUL = registerItem("free_soul", new FreeSoulItem(new Item.Settings().rarity(Rarity.RARE)));
     public static final Item EYE_OF_THE_FORGOTTEN = registerItem("eye_of_the_forgotten", new Item(new Item.Settings().rarity(Rarity.RARE)));
-
-    public static final Item DREAD_STEEL = registerItem("dread_steel", new Item(new Item.Settings().fireproof()));
+    public static final Item DREAD_STEEL = registerItem("dread_steel", new Item(new Item.Settings()));
     public static final Item WITHER_BONE = registerItem("wither_bone", new Item(new Item.Settings().fireproof()));
+    public static final Item ETHEREAL_CORE = registerItem("ethereal_core", new Item(new Item.Settings().rarity(Rarity.RARE)));
+    public static final Item ARCANE_STEEL = registerItem("arcane_steel", new Item(new Item.Settings()));
+    public static final Item ARCANE_TEAR = registerItem("arcane_tear", new Item(new Item.Settings()));
 
     public static final Item SOUL_STAFF = registerItem("soul_staff",
             new SoulStaffItem(ToolMaterials.NETHERITE, new Item.Settings()

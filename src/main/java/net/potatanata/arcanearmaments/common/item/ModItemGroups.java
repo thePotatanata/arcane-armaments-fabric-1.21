@@ -22,6 +22,9 @@ public class ModItemGroups {
                         entries.add(ModItems.EYE_OF_THE_FORGOTTEN);
                         entries.add(ModItems.DREAD_STEEL);
                         entries.add(ModItems.WITHER_BONE);
+                        entries.add(ModItems.ETHEREAL_CORE);
+                        entries.add(ModItems.ARCANE_STEEL);
+                        entries.add(ModItems.ARCANE_TEAR);
 
                     }).build());
 
